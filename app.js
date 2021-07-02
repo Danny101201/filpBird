@@ -60,7 +60,7 @@ function setEventListener() {
 class MusicBg{
     constructor() {
         this.bgMusic = new Audio('./sounds/bg.wav')
-        this.bgMusic.volume = 0.03
+        this.bgMusic.volume = 0.5
     }
     playBg(){
         this.bgMusic.currentTime = 0
@@ -115,7 +115,7 @@ function characterJump() {
 }
 function resetCharacterPosition(){
     characters.style.top = '20vh'
-    characters.style.left ='40vh'
+    characters.style.left ='10vh'
 }
 function changeGameState({ diff, direction }) {
     handleStarDection()
